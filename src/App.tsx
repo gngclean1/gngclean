@@ -983,12 +983,13 @@ export default function App() {
       <footer className="bg-slate-900 text-gray-400 text-xs py-8 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left space-y-4 sm:space-y-0 sm:flex sm:items-center sm:justify-between">
           <div className="space-y-1">
-            <p className="font-extrabold text-gray-300">지앤지클린 (GNG Clean)</p>
+            <p className="font-extrabold text-gray-300">주식회사 지앤지클린</p>
+            <p>대표자: 박중현 | 사업자등록번호: 466-86-02876</p>
             <p>대표전화: 010-2699-0484 (365일 24시간 긴급 접수 대기)</p>
             <p>사업분야: 누수탐지, 보수공사, 하수구 고압세척, 싱크대/변기 뚫음, 수전교체, 언수도 녹임, 동파 해빙</p>
           </div>
           <div className="text-center sm:text-right text-[10px] text-gray-500">
-            <p>© 2026 지앤지클린 All Rights Reserved.</p>
+            <p>© 2026 주식회사 지앤지클린 All Rights Reserved.</p>
             <p className="mt-1">본 사이트는 모바일 및 PC 반응형 레이아웃에 최적화되어 있습니다.</p>
           </div>
         </div>
