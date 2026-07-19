@@ -1,0 +1,6 @@
+{
+  "name": "지앤지클린",
+  "description": "누수탐지, 하수구막힘, 싱크대/변기막힘 해결, 수전 및 변기교체, 해빙 등을 전문으로 하는 지앤지클린의 고전환율 브랜드 랜딩페이지입니다. 신뢰감과 깔끔함을 주는 디자인과 AI 배관 증상 진단 도우미가 포함되어 있습니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

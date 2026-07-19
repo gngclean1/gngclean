@@ -1,0 +1,11 @@
+This folder is for Gng Clean's real construction photos.
+Please drag and drop your photos here with the following filenames:
+1. leak_detection.jpg (누수탐지 & 누수공사)
+2. sewer_jetting.jpg (하수구막힘 & 하수구 고압세척)
+3. sink_clog.jpg (싱크대막힘)
+4. faucet_replacement.jpg (수전교체)
+5. bathroom_ceramics.jpg (세면대교체 & 변기교체)
+6. frozen_thawing.jpg (해빙 & 언수도녹임)
+
+Supported formats: .jpg, .jpeg, .png, .webp
+If you upload them here, they will instantly display in the interactive work section of the website!
