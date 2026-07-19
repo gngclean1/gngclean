@@ -59,7 +59,7 @@ export default function GngCleanBookingForm() {
 
   // Password & Security State
   const [masterPassword, setMasterPassword] = useState(() => {
-    return localStorage.getItem("gngclean_admin_password") || "0484";
+    return localStorage.getItem("gngclean_admin_password") || "gng0484*";
   });
   const [passwordInput, setPasswordInput] = useState("");
   const [passwordError, setPasswordError] = useState("");
@@ -215,7 +215,7 @@ export default function GngCleanBookingForm() {
       sessionStorage.setItem("gngclean_admin_logged_in", "true");
       setPasswordInput("");
     } else {
-      setPasswordError("비밀번호가 일치하지 않습니다. 대표전화 뒷자리가 맞는지 확인해주세요.");
+      setPasswordError("비밀번호가 일치하지 않습니다. 관리자 전용 보안 패스코드를 정확하게 입력해주세요.");
     }
   };
 
@@ -352,7 +352,7 @@ export default function GngCleanBookingForm() {
             <div className="p-3.5 bg-blue-50/70 border border-blue-100 rounded-xl max-w-sm mx-auto text-left space-y-1.5">
               <span className="text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold">2차 안전 백업 보관 중</span>
               <p className="text-[11px] text-blue-900 leading-relaxed font-semibold">
-                현재 Google Apps Script 연동 주소가 비어있어, 브라우저 내부 백업 로그에 성공적으로 저장되었습니다. 하단 <strong>[관리자 설정]</strong>에서 비밀번호 '0484' 입력 후, 연동 주소를 등록하시면 구글 시트 저장 및 이메일 알림이 전송됩니다!
+                현재 Google Apps Script 연동 주소가 비어있어, 브라우저 내부 백업 로그에 성공적으로 저장되었습니다. 하단 <strong>[관리자 설정]</strong>에서 관리자 비밀번호 입력 후, 연동 주소를 등록하시면 구글 시트 저장 및 이메일 알림이 전송됩니다!
               </p>
             </div>
           )}
@@ -526,7 +526,7 @@ export default function GngCleanBookingForm() {
                     마스터 비밀번호 로그인
                   </label>
                   <p className="text-[10px] text-gray-500 leading-normal">
-                    초기 마스터 비밀번호는 대표번호 뒷자리 <strong className="text-blue-600">0484</strong> 입니다. 로그인 후 안전한 비밀번호로 언제든 변경하실 수 있습니다.
+                    지앤지클린 대표님 및 지정 관리자만 로그인이 가능합니다. 초기 부여된 관리자 전용 비밀번호를 기입해주세요. (로그인 후 비밀번호 변경 탭에서 언제든 변경할 수 있습니다.)
                   </p>
                 </div>
                 <div className="flex gap-2">
@@ -534,7 +534,7 @@ export default function GngCleanBookingForm() {
                     type="password"
                     value={passwordInput}
                     onChange={(e) => setPasswordInput(e.target.value)}
-                    placeholder="비밀번호 입력 (초기: 0484)"
+                    placeholder="관리자 보안 비밀번호 입력"
                     className="flex-1 p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-xs font-mono focus:ring-1 focus:ring-blue-500 focus:outline-none"
                   />
                   <button
